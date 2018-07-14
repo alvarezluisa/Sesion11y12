@@ -12,6 +12,9 @@
       <td><%= articulo.text %></td>
       <td><%= link_to 'show', articulo_path(articulo) %></td>
       <td><%= link_to 'editar', edit_articulo_path(articulo) %></td>
+      <td><%= link_to 'Eliminar', articulo_path(articulo),
+                                  method: :delete,
+                                  data: { confirm: 'Confirma eliminación?' } %></td>
     </tr>
   <% end %>
 </table>

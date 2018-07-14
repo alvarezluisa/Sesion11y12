@@ -1102,3 +1102,1273 @@ Processing by ArticulosController#show as HTML
 Completed 200 OK in 203ms (Views: 170.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 14:19:10 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 734ms (Views: 700.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new?%23%3CArticulosController%3A0x00000000076cc9b8%3E=articulos" for 127.0.0.1 at 2018-07-14 14:19:15 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x00000000076cc9b8>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (171.9ms)
+  Rendered articulos/new.html.erb within layouts/application (187.5ms)
+Completed 200 OK in 375ms (Views: 353.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 14:19:27 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ept8sWIE/VlOC3AzDEYQaN0gbySavHXPlPxy7SUA2iXIdUL9aFL9ha3mWDyKlZNYYndJNCPl0nfcPctVecbpQg==", "articulo"=>{"title"=>"sdfs", "text"=>"fsd"}, "commit"=>"Create Articulo"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (0.0ms)
+  Rendered articulos/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 203ms (Views: 186.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 14:19:31 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IjKHNd7EpamztgDof0jb1YnYvycT8ExCTPY3Sadjyn3OcKb03PxJwbi9nI1N0ke3oqLiBZvVZ+T//AFngjNbTQ==", "articulo"=>{"title"=>"sdfsd", "text"=>"fsd"}, "commit"=>"Create Articulo"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[36mArticulo Create (0.0ms)[0m  [1m[32mINSERT INTO "articulos" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sdfsd"], ["text", "fsd"], ["created_at", "2018-07-14 19:19:31.600372"], ["updated_at", "2018-07-14 19:19:31.600372"]]
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[35m (140.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+Redirected to http://localhost:3000/articulos/9
+Completed 302 Found in 141ms (ActiveRecord: 140.6ms)
+
+
+Started GET "/articulos/9" for 127.0.0.1 at 2018-07-14 14:19:31 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (171.9ms)
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_articulos_path' for #<#<Class:0x0000000007706a50>:0x000000000b3f4e30>
+Did you mean?  edit_articulo_path
+               edit_articulo_url):
+     9: 
+    10: 
+    11: <%= link_to 'Regresar', articulos_path %>
+    12: <%= link_to 'Editar', edit_articulos_path(@articulo) %>
+  
+app/views/articulos/show.html.erb:12:in `_app_views_articulos_show_html_erb__843398630_94350340'
+Started GET "/articulos/9" for 127.0.0.1 at 2018-07-14 14:21:18 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 139.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/9/edit" for 127.0.0.1 at 2018-07-14 14:21:23 -0500
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (0.0ms)
+  Rendered articulos/edit.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 172ms (Views: 151.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 14:21:32 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 156ms (Views: 137.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/1/edit" for 127.0.0.1 at 2018-07-14 14:21:35 -0500
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (0.0ms)
+  Rendered articulos/edit.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 172ms (Views: 159.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 14:21:38 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 14:24:33 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/index.html.erb:17: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+             data: { confirm 'Confirma eliminación?' } );@o
+                              ^
+C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/index.html.erb:17: syntax error, unexpected '}', expecting ')'
+irm 'Confirma eliminación?' } );@output_buffer.safe_append=
+                              ^
+C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/index.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/articulos/index.html.erb:17: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/articulos/index.html.erb:17: syntax error, unexpected '}', expecting ')'
+app/views/articulos/index.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+app/views/articulos/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/articulos/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 14:26:40 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 172ms (Views: 141.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articulos/1" for 127.0.0.1 at 2018-07-14 14:26:45 -0500
+Processing by ArticulosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8mSNi/h1B5J0gI4BmHZ8HHwy8eEfwyIW+P7y92JNDO0eJqxK+k3r+n+LEmSq7OB+V0isw5fmCbBL9MTZRx2d3Q==", "id"=>"1"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:35
+  [1m[36mArticulo Destroy (0.0ms)[0m  [1m[31mDELETE FROM "articulos" WHERE "articulos"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/articulos_controller.rb:35
+  [1m[35m (78.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:35
+Redirected to http://localhost:3000/articulos
+Completed 302 Found in 78ms (ActiveRecord: 78.1ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 14:26:45 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 141.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 14:29:17 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 138.5ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articulos.5" for 127.0.0.1 at 2018-07-14 14:29:21 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/articulos.5"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started DELETE "/articulos.6" for 127.0.0.1 at 2018-07-14 14:29:28 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/articulos.6"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 14:29:33 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (453.1ms)
+Completed 200 OK in 1109ms (Views: 1054.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articulos/3" for 127.0.0.1 at 2018-07-14 14:29:39 -0500
+Processing by ArticulosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pz7X7zU4e/2aHmmHos/CvBZDD8iwwbdsB8te4013cPxLfPYuNwCXlZEV9eKQVV7ePTlS6jjknMq0wWjNaCfhzA==", "id"=>"3"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:35
+  [1m[36mArticulo Destroy (0.0ms)[0m  [1m[31mDELETE FROM "articulos" WHERE "articulos"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/articulos_controller.rb:35
+  [1m[35m (62.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:35
+Redirected to http://localhost:3000/articulos
+Completed 302 Found in 78ms (ActiveRecord: 62.5ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 14:29:39 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 203ms (Views: 165.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateComentarios (20180714193510)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180714193510_create_comentarios.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "comentarios" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "cuerpo" text, "articulo_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_f56337df6b"
+FOREIGN KEY ("articulo_id")
+  REFERENCES "articulos" ("id")
+)[0m
+  ↳ db/migrate/20180714193510_create_comentarios.rb:3
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE  INDEX "index_comentarios_on_articulo_id" ON "comentarios" ("articulo_id")[0m
+  ↳ db/migrate/20180714193510_create_comentarios.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180714193510"]]
+  ↳ bin/rails:4
+  [1m[35m (63.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 14:56:18 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (234.4ms)
+Completed 500 Internal Server Error in 375ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000b927268>:0x000000000b9254e0>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [@articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_97074620'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 14:59:01 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (31.2ms)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `comentario' for #<Articulo:0x000000000b91cc28>
+Did you mean?  comentarios
+               comentarios=):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [@articulo, @articulo.comentario.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_97041560'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 14:59:31 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (140.6ms)
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000b927268>:0x000000000bb724a0>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_98277780'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:04:30 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (187.5ms)
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000b927268>:0x0000000004bef290>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_39871380'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:04:43 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (156.3ms)
+Completed 500 Internal Server Error in 234ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000b927268>:0x000000000a609938>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_87054720'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:06:46 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (31.2ms)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `comentarios' for #<Articulo:0x000000000b805038>
+Did you mean?  comentario
+               comentario=
+               comentario_ids):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_96467780'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:06:49 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (46.9ms)
+Completed 500 Internal Server Error in 1922ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `comentarios' for #<Articulo:0x000000000b94dfa8>
+Did you mean?  comentario
+               comentario=
+               comentario_ids):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_97138560'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:07:46 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (156.3ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000b3d63e0>:0x000000000b3d43d8>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_94287580'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:10:38 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (140.6ms)
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_articulos_path' for #<#<Class:0x000000000b3d63e0>:0x000000000be9a470>
+Did you mean?  edit_articulo_path
+               edit_articulo_url):
+     9: 
+    10: 
+    11: <%= link_to 'Regresar', articulo_path %>
+    12: <%= link_to 'Editar', edit_articulos_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+  
+app/views/articulos/show.html.erb:12:in `_app_views_articulos_show_html_erb__843398630_99931940'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:11:29 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 281ms (Views: 265.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:11:34 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 142.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:11:35 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 151.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:11:37 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:11:37 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 135.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:11:48 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 15:11:50 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000af9ee80%3E=articulos" for 127.0.0.1 at 2018-07-14 15:11:53 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000af9ee80>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (0.0ms)
+  Rendered articulos/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 172ms (Views: 162.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 15:11:55 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 140.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2/edit" for 127.0.0.1 at 2018-07-14 15:11:56 -0500
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (15.6ms)
+  Rendered articulos/edit.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 187ms (Views: 173.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 15:11:58 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 149.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:12:00 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 147.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2/edit" for 127.0.0.1 at 2018-07-14 15:12:02 -0500
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered articulos/_form.html.erb (0.0ms)
+  Rendered articulos/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 188ms (Views: 170.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 15:12:04 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 149.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 15:12:14 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 150.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:12:17 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (156.2ms)
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000b3d63e0>:0x000000000bf232e8>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_100212620'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:14:39 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (187.5ms)
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000bab4d60>:0x000000000baaf2e8>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_97889020'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:14:41 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (625.0ms)
+Completed 500 Internal Server Error in 2844ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000bab4d60>:0x000000000a13c3d8>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_84537140'
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:15:43 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (173.1ms)
+Completed 500 Internal Server Error in 268ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000a5c9c20>:0x000000000a5c1548>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_86923920'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:15:52 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (156.3ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000a5c9c20>:0x000000000b3c5428>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_94253060'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:17:51 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (140.6ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000b9de828>:0x000000000b9d7910>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__843398630_97450740'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:18:10 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (171.9ms)
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x00000000097608a0>:0x0000000009769658>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__672344804_79366980'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:21:20 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (156.3ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000910b680>:0x0000000009109c40>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__672344804_76046260'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:22:52 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (15.6ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (140.6ms)
+Completed 500 Internal Server Error in 250ms (ActiveRecord: 15.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `from_with' for #<#<Class:0x000000000908dc08>:0x000000000908c1f0>
+Did you mean?  form_with):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= from_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__672344804_75788920'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:23:14 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (140.6ms)
+Completed 500 Internal Server Error in 234ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `articulo_comentarios_path' for #<#<Class:0x000000000908dc08>:0x00000000092cd9a0>
+Did you mean?  articulos_path):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <h2>Agregar comentario:</h2>
+    15: <%= form_with(model: [ @articulo, @articulo.comentarios.build ], local: true) do |form| %>
+    16: <p>
+    17:   <%= form.label :nombre %><br>
+    18:   <%= form.text_field :nombre %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__672344804_76968760'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:32:09 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 609ms (Views: 581.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:34:37 -0500
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/config/routes.rb:7: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+config/routes.rb:7: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:35:41 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:14
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered articulos/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 219ms (Views: 163.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 15:35:45 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 150.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:35:47 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:14
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 148.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:36:16 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (265.6ms)
+Completed 200 OK in 426ms (Views: 400.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos/2/comentarios" for 127.0.0.1 at 2018-07-14 15:36:47 -0500
+Processing by ComentariosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pqgeB/6I4KJRQdIaQglAz6BwqrUnyTTFYy5b+v2sE/RK6j/G/LAMylpKTn9wk9ytiwr3l6/sH2PQJG3U2PyCxA==", "comentario"=>{"nombre"=>"bhn", "cuerpo"=>""}, "commit"=>"Create Comentario", "articulo_id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comentarios_controller.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comentarios_controller.rb:4
+  [1m[36mComentario Create (15.6ms)[0m  [1m[32mINSERT INTO "comentarios" ("nombre", "cuerpo", "articulo_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "bhn"], ["cuerpo", ""], ["articulo_id", 2], ["created_at", "2018-07-14 20:36:47.679045"], ["updated_at", "2018-07-14 20:36:47.679045"]]
+  ↳ app/controllers/comentarios_controller.rb:4
+  [1m[35m (111.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comentarios_controller.rb:4
+Redirected to http://localhost:3000/articulos/2
+Completed 302 Found in 128ms (ActiveRecord: 127.2ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:36:47 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 169ms (Views: 138.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:37:05 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:34
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 219ms (Views: 194.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos/2/comentarios" for 127.0.0.1 at 2018-07-14 15:39:31 -0500
+Processing by ComentariosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9Mrr8DJI0q99/j+vfV3I5FQ4cjQLY2nsFQlSmni053IYiMoxMHA+x3b1o8pPx1SGf0IvFoNGQkqmA2S0XeR2Qg==", "comentario"=>{"nombre"=>"rfthjkl", "cuerpo"=>""}, "commit"=>"Create Comentario", "articulo_id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comentarios_controller.rb:3
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comentarios_controller.rb:4
+  [1m[36mComentario Create (0.0ms)[0m  [1m[32mINSERT INTO "comentarios" ("nombre", "cuerpo", "articulo_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["nombre", "rfthjkl"], ["cuerpo", ""], ["articulo_id", 2], ["created_at", "2018-07-14 20:39:32.263742"], ["updated_at", "2018-07-14 20:39:32.263742"]]
+  ↳ app/controllers/comentarios_controller.rb:4
+  [1m[35m (123.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comentarios_controller.rb:4
+Redirected to http://localhost:3000/articulos/2
+Completed 302 Found in 171ms (ActiveRecord: 123.2ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:39:32 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:34
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:40:21 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:14
+  Rendered collection of comentarios/_comentario.html.erb [2 times] (0.0ms)
+  Rendered articulos/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 188ms (Views: 160.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:42:11 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:14
+  Rendered collection of comentarios/_comentario.html.erb [2 times] (31.2ms)
+  Rendered articulos/show.html.erb within layouts/application (46.9ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `Articulo' for #<Comentario:0x000000000cf9ea28>
+Did you mean?  articulo=):
+    16: </p>
+    17: 
+    18: <p>
+    19:   <%= link_to 'Eliminar Comentario', [comentario.Articulo, comentario],
+    20:                method: :delete,
+    21:                data: { confirm: '¿Estas seguro de eliminar el comentario?' } %>
+    22: </p>
+  
+app/views/comentarios/_comentario.html.erb:19:in `block in _app_views_comentarios__comentario_html_erb__961553161_108849600'
+app/views/comentarios/_comentario.html.erb:7:in `_app_views_comentarios__comentario_html_erb__961553161_108849600'
+app/views/articulos/show.html.erb:14:in `_app_views_articulos_show_html_erb__672344804_108903720'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:42:26 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:14
+  Rendered collection of comentarios/_comentario.html.erb [2 times] (0.0ms)
+  Rendered articulos/show.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 193ms (Views: 171.3ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articulos/2/comentarios/1" for 127.0.0.1 at 2018-07-14 15:42:31 -0500
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for ComentariosController):
+  
+actionpack (5.2.0) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started DELETE "/articulos/2/comentarios/1" for 127.0.0.1 at 2018-07-14 15:45:54 -0500
+Processing by ComentariosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4zsTBKtJ5x4G7FDSKzlEZkV9h07lX+YWEa0iAs9mJlQPeTLFqXELdg3nzLcZo9gEbgfabG16zbCipxQs6ja3ZA==", "articulo_id"=>"2", "id"=>"1"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comentarios_controller.rb:18
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT  "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ? AND "comentarios"."id" = ? LIMIT ?[0m  [["articulo_id", 2], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comentarios_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comentarios_controller.rb:10
+  [1m[36mComentario Destroy (0.0ms)[0m  [1m[31mDELETE FROM "comentarios" WHERE "comentarios"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/comentarios_controller.rb:10
+  [1m[35m (120.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comentarios_controller.rb:10
+Redirected to http://localhost:3000/articulos/2
+Completed 302 Found in 137ms (ActiveRecord: 120.7ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:45:54 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (1.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:14
+  Rendered collection of comentarios/_comentario.html.erb [1 times] (1.0ms)
+  Rendered articulos/show.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 196ms (Views: 168.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:47:11 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:14
+  Rendered collection of comentarios/_comentario.html.erb [1 times] (0.0ms)
+  Rendered articulos/show.html.erb within layouts/application (62.5ms)
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form' for #<Articulo:0x000000000cdd75a0>):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <%= render @articulo.comentarios %>
+    15: <%= render @articulo.form %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__672344804_107917600'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:49:16 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:14
+  Rendered collection of comentarios/_comentario.html.erb [1 times] (0.0ms)
+  Rendered articulos/show.html.erb within layouts/application (93.8ms)
+Completed 500 Internal Server Error in 219ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial comentatios/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views"
+):
+    12: <%= link_to 'Editar', edit_articulo_path(@articulo) %>
+    13: 
+    14: <%= render @articulo.comentarios %>
+    15: <%= render 'comentatios/form' %>
+  
+app/views/articulos/show.html.erb:15:in `_app_views_articulos_show_html_erb__672344804_89965760'
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:49:30 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:44
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:14
+  Rendered collection of comentarios/_comentario.html.erb [1 times] (0.0ms)
+  Rendered comentarios/_form.html.erb (0.0ms)
+  Rendered articulos/show.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 219ms (Views: 199.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articulos/2/comentarios/2" for 127.0.0.1 at 2018-07-14 15:52:08 -0500
+Processing by ComentariosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JqqiKV7D2KDtYDxhgiG30O/C4PmRgN7YE05QucZDKVbK6IPoXPs0yOZroASwuyuyxLi92xml9X6gRGaX4xO4Zg==", "articulo_id"=>"2", "id"=>"2"}
+Filter chain halted as #<Proc:0x000000000d1970c8@C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/actionpack-5.2.0/lib/action_controller/metal/http_authentication.rb:72> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articulos/2/comentarios/2" for 127.0.0.1 at 2018-07-14 15:52:18 -0500
+Processing by ComentariosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JqqiKV7D2KDtYDxhgiG30O/C4PmRgN7YE05QucZDKVbK6IPoXPs0yOZroASwuyuyxLi92xml9X6gRGaX4xO4Zg==", "articulo_id"=>"2", "id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comentarios_controller.rb:19
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT  "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ? AND "comentarios"."id" = ? LIMIT ?[0m  [["articulo_id", 2], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/comentarios_controller.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comentarios_controller.rb:11
+  [1m[36mComentario Destroy (0.0ms)[0m  [1m[31mDELETE FROM "comentarios" WHERE "comentarios"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/comentarios_controller.rb:11
+  [1m[35m (115.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comentarios_controller.rb:11
+Redirected to http://localhost:3000/articulos/2
+Completed 302 Found in 162ms (ActiveRecord: 115.0ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 15:52:18 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:46
+  Rendering articulos/show.html.erb within layouts/application
+  [1m[36mComentario Load (0.0ms)[0m  [1m[34mSELECT "comentarios".* FROM "comentarios" WHERE "comentarios"."articulo_id" = ?[0m  [["articulo_id", 2]]
+  ↳ app/views/articulos/show.html.erb:14
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comentarios/_form.html.erb (0.0ms)
+  Rendered articulos/show.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 219ms (Views: 182.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+Migrating to CreateProductos (20180714205423)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180714205423_create_productos.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "productos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "precio" float, "descripcion" text, "disponible" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180714205423_create_productos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180714205423"]]
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[35m (100.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[35m (3.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ C:/Ruby24-x64/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/bin/rake:23

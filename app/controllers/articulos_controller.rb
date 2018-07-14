@@ -1,4 +1,6 @@
 class ArticulosController < ApplicationController
+  http_basic_authenticate_with name: "nasugo", password: "JEPA", except: [:index, :show]
+
   def new
     @articulo = Articulo.new
   end
@@ -30,7 +32,12 @@ class ArticulosController < ApplicationController
   def index
     @articulos = Articulo.all
   end
+  def destroy
+    set_articulo
+    @articulo.destroy
 
+    redirect_to articulos_path
+  end
   private
     def articulo_params
         params.require(:articulo).permit(:title, :text)

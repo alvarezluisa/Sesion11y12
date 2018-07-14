@@ -1,31 +1,3 @@
 <h1>Editar</h1>
-
-<%= form_with(model: @articulo, local: true) do |form| %>
-  <% if @articulo.errors.any? %>
-      <div id="error_explanation">
-          <h2>
-            <%= pluralize(@articulo.errors.count, "error") %>ERROR
-            Este articulo se Guarda
-          </h2>
-          <ul>
-            <% @articulo.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-            <% end %>
-          </ul>
-      </div>
-  <% end %>
-
-  <p>
-    <%= form.label :Titulo %> <br>
-    <%= form.text_field :title %> <br>
-  </p>
-  <p>
-    <%= form.label :Texto %> <br>
-    <%= form.text_area :text %> <br>
-  </p>
-
-  <p>
-    <%= form.submit "Guardar"%>
-  </p>
-  <%= link_to 'Regresar', articulos_path %>
-<% end %>
+<%= render 'form' %>
+<%= link_to 'Regresar', articulos_path %>

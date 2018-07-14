@@ -9,4 +9,7 @@
 
 
 <%= link_to 'Regresar', articulos_path %>
-<%= link_to 'Editar', edit_articulos_path(@articulo) %>
+<%= link_to 'Editar', edit_articulo_path(@articulo) %>
+
+<%= render @articulo.comentarios %>
+<%= render 'comentarios/form' %>
