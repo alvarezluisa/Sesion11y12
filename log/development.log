@@ -1,0 +1,1104 @@
+Started GET "/" for 127.0.0.1 at 2018-07-14 08:52:53 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/railties-5.2.0/lib/rails/templates/rails/welcome/index.html.erb (31.3ms)
+Completed 200 OK in 266ms (Views: 129.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bienvenido/index" for 127.0.0.1 at 2018-07-14 09:16:48 -0500
+Processing by BienvenidoController#index as HTML
+  Rendering bienvenido/index.html.erb within layouts/application
+  Rendered bienvenido/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 1016ms (Views: 988.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new" for 127.0.0.1 at 2018-07-14 09:28:40 -0500
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 281ms (Views: 241.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new" for 127.0.0.1 at 2018-07-14 09:33:58 -0500
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (359.4ms)
+Completed 200 OK in 594ms (Views: 556.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new" for 127.0.0.1 at 2018-07-14 09:35:46 -0500
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 132.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new" for 127.0.0.1 at 2018-07-14 09:35:49 -0500
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 187ms (Views: 147.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos/new" for 127.0.0.1 at 2018-07-14 09:56:38 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/articulos/new"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/articulos/new" for 127.0.0.1 at 2018-07-14 09:58:34 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/articulos/new"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/articulos/new" for 127.0.0.1 at 2018-07-14 09:58:36 -0500
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (1625.0ms)
+Completed 500 Internal Server Error in 2953ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `create' for #<#<Class:0x000000000c930150>:0x000000000b8a1f50>):
+    1: <h1>Nuevoooo aticulo</h1>
+    2: 
+    3: <%= form_with scope: :articulo, url: create, local: true do |form| %>
+    4: <p>
+    5:   <%= form.label :Titulo %> <br>
+    6:   <%= form.text_field :title %> <br>
+  
+app/views/articulos/new.html.erb:3:in `_app_views_articulos_new_html_erb__12896358_96801900'
+Started GET "/articulos/new" for 127.0.0.1 at 2018-07-14 09:58:43 -0500
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (1203.2ms)
+Completed 500 Internal Server Error in 2953ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `create' for #<#<Class:0x000000000c930150>:0x000000000bce4400>):
+    1: <h1>Nuevoooo aticulo</h1>
+    2: 
+    3: <%= form_with scope: :articulo, url: create, local: true do |form| %>
+    4: <p>
+    5:   <%= form.label :Titulo %> <br>
+    6:   <%= form.text_field :title %> <br>
+  
+app/views/articulos/new.html.erb:3:in `_app_views_articulos_new_html_erb__12896358_99034820'
+Started GET "/articulos/new" for 127.0.0.1 at 2018-07-14 10:01:44 -0500
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 132.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 10:01:55 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"if8OJFa5EcI/iMKZY1s3SravkpJYp+f9qQGi0tnU9+dlvS/lVIH9qjSDXvxRwasondXPsNCCzFsaC5T8/IRm1w==", "articulo"=>{"title"=>"eff", "texto"=>"sds"}, "commit"=>"Guardar"}
+No template found for ArticulosController#create, rendering head :no_content
+Completed 204 No Content in 1594ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new" for 127.0.0.1 at 2018-07-14 10:06:11 -0500
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/controllers/articulos_controller.rb:5: syntax error, unexpected [, expecting keyword_do or '{' or '('
+    render plain: params [:articulo].inspect
+                          ^):
+  
+app/controllers/articulos_controller.rb:5: syntax error, unexpected [, expecting keyword_do or '{' or '('
+Started GET "/articulos/new" for 127.0.0.1 at 2018-07-14 10:06:40 -0500
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 123.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 10:06:52 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LMqgy2QqdVVc0YTx6yni7y+lcbP2lFavBijhCn1bADnAiIEKZhKZPVfaGJTZs36NBN8skX6xfQm1ItckWAuRCQ==", "articulo"=>{"title"=>"dfdfssd", "texto"=>"sdd"}, "commit"=>"Guardar"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 281ms (Views: 284.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:4
+  [1m[35m (77.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (80.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateArticulos (20180714151010)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE TABLE "articulos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180714151010_create_articulos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180714151010"]]
+  ↳ bin/rails:4
+  [1m[35m (60.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-07-14 15:13:18.125312"], ["updated_at", "2018-07-14 15:13:18.125312"]]
+  ↳ bin/rails:4
+  [1m[35m (62.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:4
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 10:26:11 -0500
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LMqgy2QqdVVc0YTx6yni7y+lcbP2lFavBijhCn1bADnAiIEKZhKZPVfaGJTZs36NBN8skX6xfQm1ItckWAuRCQ==", "articulo"=>{"title"=>"dfdfssd", "texto"=>"sdd"}, "commit"=>"Guardar"}
+Unpermitted parameter: :texto
+Completed 500 Internal Server Error in 281ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `articulo' for #<ArticulosController:0x000000000a5d95a8>
+Did you mean?  @articulo):
+  
+app/controllers/articulos_controller.rb:7:in `create'
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 10:30:53 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LMqgy2QqdVVc0YTx6yni7y+lcbP2lFavBijhCn1bADnAiIEKZhKZPVfaGJTZs36NBN8skX6xfQm1ItckWAuRCQ==", "articulo"=>{"title"=>"dfdfssd", "texto"=>"sdd"}, "commit"=>"Guardar"}
+Unpermitted parameter: :texto
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `articulo' for #<ArticulosController:0x000000000c13da88>
+Did you mean?  @articulo):
+  
+app/controllers/articulos_controller.rb:7:in `create'
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 10:31:57 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LMqgy2QqdVVc0YTx6yni7y+lcbP2lFavBijhCn1bADnAiIEKZhKZPVfaGJTZs36NBN8skX6xfQm1ItckWAuRCQ==", "articulo"=>{"title"=>"dfdfssd", "texto"=>"sdd"}, "commit"=>"Guardar"}
+Unpermitted parameter: :texto
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[36mArticulo Create (0.0ms)[0m  [1m[32mINSERT INTO "articulos" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dfdfssd"], ["created_at", "2018-07-14 15:31:57.586575"], ["updated_at", "2018-07-14 15:31:57.586575"]]
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[35m (125.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+Redirected to 
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 125.0ms)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/articulos_controller.rb:8:in `create'
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 10:32:17 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LMqgy2QqdVVc0YTx6yni7y+lcbP2lFavBijhCn1bADnAiIEKZhKZPVfaGJTZs36NBN8skX6xfQm1ItckWAuRCQ==", "articulo"=>{"title"=>"dfdfssd", "texto"=>"sdd"}, "commit"=>"Guardar"}
+Unpermitted parameter: :texto
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[36mArticulo Create (0.0ms)[0m  [1m[32mINSERT INTO "articulos" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dfdfssd"], ["created_at", "2018-07-14 15:32:17.210819"], ["updated_at", "2018-07-14 15:32:17.210819"]]
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[35m (78.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+Redirected to http://localhost:3000/articulos/2
+Completed 302 Found in 94ms (ActiveRecord: 78.2ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 10:32:17 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:12
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 203ms (Views: 129.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 10:33:05 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LMqgy2QqdVVc0YTx6yni7y+lcbP2lFavBijhCn1bADnAiIEKZhKZPVfaGJTZs36NBN8skX6xfQm1ItckWAuRCQ==", "articulo"=>{"title"=>"dfdfssd", "texto"=>"sdd"}, "commit"=>"Guardar"}
+Unpermitted parameter: :texto
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[36mArticulo Create (0.0ms)[0m  [1m[32mINSERT INTO "articulos" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dfdfssd"], ["created_at", "2018-07-14 15:33:05.170880"], ["updated_at", "2018-07-14 15:33:05.170880"]]
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[35m (62.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+Redirected to http://localhost:3000/articulos/3
+Completed 302 Found in 78ms (ActiveRecord: 62.6ms)
+
+
+Started GET "/articulos/3" for 127.0.0.1 at 2018-07-14 10:33:05 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:12
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 187ms (Views: 139.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new" for 127.0.0.1 at 2018-07-14 10:33:29 -0500
+Processing by ArticulosController#new as HTML
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 10:33:35 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yVW448NRukdDH+X/4r5zI4jd6AGHUk3ytQ9Aa+Tmy+olF5kiwWlWL0gUeZrQJO9Bo6e1Iw93ZlQGBXZFwbZa2g==", "articulo"=>{"title"=>"jkjkjk", "text"=>"ljkjkj"}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[36mArticulo Create (0.0ms)[0m  [1m[32mINSERT INTO "articulos" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "jkjkjk"], ["text", "ljkjkj"], ["created_at", "2018-07-14 15:33:35.379581"], ["updated_at", "2018-07-14 15:33:35.379581"]]
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[35m (109.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+Redirected to http://localhost:3000/articulos/4
+Completed 302 Found in 109ms (ActiveRecord: 109.4ms)
+
+
+Started GET "/articulos/4" for 127.0.0.1 at 2018-07-14 10:33:35 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:12
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 10:54:04 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/articulos/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 10:54:57 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/articulos/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 10:58:02 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/articulos/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 10:58:16 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/articulos/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 10:59:37 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 137.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/1" for 127.0.0.1 at 2018-07-14 10:59:42 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:12
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 129.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 11:07:48 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 250ms (Views: 210.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 11:47:19 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 11:47:29 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 122.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/1" for 127.0.0.1 at 2018-07-14 11:47:33 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:12
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 141ms (Views: 122.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 11:47:35 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 126.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/3" for 127.0.0.1 at 2018-07-14 11:47:37 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:12
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 124.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 11:47:38 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 125.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 11:48:21 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000c17cc38%3E=articulos" for 127.0.0.1 at 2018-07-14 11:48:24 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000c17cc38>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 128.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 11:48:26 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 141ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000c28d7d0%3E=articulos" for 127.0.0.1 at 2018-07-14 11:50:47 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000c28d7d0>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 139.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 11:50:56 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rlG6ba2cyQjPH6ob4xHW3WI5WvfzDOJtpWobAS6jJkN0v4Qhp8rJ1CzyghRlwlXt3W5850pVRdXtq6K5cmUVJA==", "articulo"=>{"title"=>"111", "text"=>"sdfg"}, "commit"=>"Guardar"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown key: :presence. Valid keys are: :on, :if, :unless, :prepend. Perhaps you meant to call `validates` instead of `validate`?):
+  
+app/models/articulo.rb:2:in `<class:Articulo>'
+app/models/articulo.rb:1:in `<top (required)>'
+app/controllers/articulos_controller.rb:6:in `create'
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 11:51:43 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rlG6ba2cyQjPH6ob4xHW3WI5WvfzDOJtpWobAS6jJkN0v4Qhp8rJ1CzyghRlwlXt3W5850pVRdXtq6K5cmUVJA==", "articulo"=>{"title"=>"111", "text"=>"sdfg"}, "commit"=>"Guardar"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown key: :presence. Valid keys are: :on, :if, :unless, :prepend. Perhaps you meant to call `validates` instead of `validate`?):
+  
+app/models/articulo.rb:2:in `<class:Articulo>'
+app/models/articulo.rb:1:in `<top (required)>'
+app/controllers/articulos_controller.rb:6:in `create'
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 11:52:15 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rlG6ba2cyQjPH6ob4xHW3WI5WvfzDOJtpWobAS6jJkN0v4Qhp8rJ1CzyghRlwlXt3W5850pVRdXtq6K5cmUVJA==", "articulo"=>{"title"=>"111", "text"=>"sdfg"}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+Redirected to http://localhost:3000/articulos
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 11:52:16 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (15.6ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 141ms (Views: 116.3ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000c2bf320%3E=articulos" for 127.0.0.1 at 2018-07-14 11:52:20 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000c2bf320>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 127.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 11:52:24 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iEX8Sr3hmvFQXYvuRkgSqzSq7RKNZk0nHrM4DDI25sNSq8IGt7eaLbOwo+HAm5Gbi/3LAjQ/6p9WcoG0bvDVpA==", "articulo"=>{"title"=>"", "text"=>"kjj"}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+Redirected to http://localhost:3000/articulos
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 11:52:24 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 141.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000c247d98%3E=articulos" for 127.0.0.1 at 2018-07-14 11:52:27 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000c247d98>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 188ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 11:52:31 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ALQF3ro+cGLZUvlWIDnaOM5CGrsr+4fvvkaw6YnooNjaWjuSsGhwvjq/0Vmm6lkIcRU8q5KiIFf2hwlR1S6Tvw==", "articulo"=>{"title"=>"fghjkl", "text"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[36mArticulo Create (0.0ms)[0m  [1m[32mINSERT INTO "articulos" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "fghjkl"], ["text", ""], ["created_at", "2018-07-14 16:52:31.190145"], ["updated_at", "2018-07-14 16:52:31.190145"]]
+  ↳ app/controllers/articulos_controller.rb:7
+  [1m[35m (93.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:7
+Redirected to http://localhost:3000/articulos/5
+Completed 302 Found in 94ms (ActiveRecord: 93.8ms)
+
+
+Started GET "/articulos/5" for 127.0.0.1 at 2018-07-14 11:52:31 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:12
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 156ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 11:52:34 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 131.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000bc3d880%3E=articulos" for 127.0.0.1 at 2018-07-14 12:00:02 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000bc3d880>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 12:00:09 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZIUPD8kNCGG/7IFNMv4J7cpuGtNQXTL90OK9+95lWsu+azFDw1sIvVwBqUK0LYrddTk8w+kElUWYIwRDgqNprA==", "articulo"=>{"title"=>"hh", "text"=>"ju"}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 155.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 12:00:16 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"feHuQ8c9CrbXuMBAO4JTOAW8tFVgws9ECgde7k1diIyRo8+CxQXm3tyzXCUJGM9aLsbpd+jn5OK5DWjAaA0ZvA==", "articulo"=>{"title"=>"hh", "text"=>"ju"}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 12:00:18 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yC4R3uB3GUZhXpTID6Yz2loX7301CCtkDN0hAvcn8igkbDAf4k/1LmpVCK09PK+4cW2yX70tAMK/1xcs0ndjGA==", "articulo"=>{"title"=>"hh", "text"=>"ju"}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 172ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 12:00:19 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j9Pl4MM/b6RUoezfV9SbOEqbjQisryiJR96QLy92JvtjkcQhwQeDzF+qcLplTgdaYeHQKiSKAy/01KYBCia3yw==", "articulo"=>{"title"=>"hh", "text"=>"ju"}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 139.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 12:00:52 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SLWXJvs2EDQjFqzg67+JKbtLKb3bISKItYyJX5IgxH+k97bn+Q78XCgdMIXZJRVLkDF0n1MECS4Ghr9xt3BVTw==", "articulo"=>{"title"=>"hh", "text"=>"ju"}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/articulos_controller.rb:11:in `create'
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000bc3d880%3E=articulos" for 127.0.0.1 at 2018-07-14 12:01:08 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000bc3d880>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 130.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 12:01:31 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cJJYRr6L3OnFXL8U2oFFyzXAjuXmZqpk8Tai6RbFERiqfGYKtN3cNSaxlxtcUsb7ipeo9V8/Ddy59xtRSgMifw==", "articulo"=>{"title"=>"kkm,k", "text"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+  [1m[36mArticulo Create (0.0ms)[0m  [1m[32mINSERT INTO "articulos" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "kkm,k"], ["text", ""], ["created_at", "2018-07-14 17:01:31.932659"], ["updated_at", "2018-07-14 17:01:31.932659"]]
+  ↳ app/controllers/articulos_controller.rb:8
+  [1m[35m (78.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:8
+Redirected to http://localhost:3000/articulos/6
+Completed 302 Found in 94ms (ActiveRecord: 78.2ms)
+
+
+Started GET "/articulos/6" for 127.0.0.1 at 2018-07-14 12:01:32 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:16
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 132.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 13:26:08 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 203ms (Views: 171.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000bb5c628%3E=articulos" for 127.0.0.1 at 2018-07-14 13:26:11 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000bb5c628>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/new.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/articulos/new.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000bb5c628%3E=articulos" for 127.0.0.1 at 2018-07-14 13:26:53 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000bb5c628>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/new.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/articulos/new.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000bb5c628%3E=articulos" for 127.0.0.1 at 2018-07-14 13:28:16 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000bb5c628>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/new.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/articulos/new.html.erb:33: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000bb5c628%3E=articulos" for 127.0.0.1 at 2018-07-14 13:30:48 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000bb5c628>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/new.html.erb:32: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/articulos/new.html.erb:32: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000bb5c628%3E=articulos" for 127.0.0.1 at 2018-07-14 13:33:43 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000bb5c628>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/new.html.erb:13: syntax error, unexpected keyword_end
+ze;@output_buffer.append=( end );@output_buffer.safe_append=
+                              ^
+C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/new.html.erb:30: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/new.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/new.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/articulos/new.html.erb:13: syntax error, unexpected keyword_end
+app/views/articulos/new.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/articulos/new.html.erb:30: syntax error, unexpected keyword_end, expecting ')'
+app/views/articulos/new.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/articulos/new.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000bb5c628%3E=articulos" for 127.0.0.1 at 2018-07-14 13:34:04 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000bb5c628>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 141ms (Views: 128.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 13:34:08 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G8Yi1XYGPsHvCv9ygGjN5WWNtlX2PbnZBAgGzi1Unib3hAMUdD7SqeQBYxey8lGHTvfrd34Ykn+3AjDgCAQPFg==", "articulo"=>{"title"=>"ds", "text"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 2)):
+     8:             Este articulo se Guarda
+     9:           </h2>
+    10:           <ul>
+    11:             <% @articulo.errors.full_message.each do |msg| %>
+    12:             <li><%= msg %></li>
+    13:             <% end %>
+    14:           </ul>
+  
+app/views/articulos/new.html.erb:11:in `block in _app_views_articulos_new_html_erb__12896358_51011980'
+app/views/articulos/new.html.erb:3:in `_app_views_articulos_new_html_erb__12896358_51011980'
+app/controllers/articulos_controller.rb:12:in `create'
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 13:37:11 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G8Yi1XYGPsHvCv9ygGjN5WWNtlX2PbnZBAgGzi1Unib3hAMUdD7SqeQBYxey8lGHTvfrd34Ykn+3AjDgCAQPFg==", "articulo"=>{"title"=>"ds", "text"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (31.2ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 2)):
+     8:             Este articulo se Guarda
+     9:           </h2>
+    10:           <ul>
+    11:             <% @articulo.errors.full_message.each do |msg| %>
+    12:             <li><%= msg %></li>
+    13:             <% end %>
+    14:           </ul>
+  
+app/views/articulos/new.html.erb:11:in `block in _app_views_articulos_new_html_erb__12896358_80096060'
+app/views/articulos/new.html.erb:3:in `_app_views_articulos_new_html_erb__12896358_80096060'
+app/controllers/articulos_controller.rb:12:in `create'
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 13:37:16 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 135.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new?%23%3CArticulosController%3A0x000000000aa4c900%3E=articulos" for 127.0.0.1 at 2018-07-14 13:37:21 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x000000000aa4c900>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 141ms (Views: 130.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 13:37:29 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KPjU513cVVxKb0ha8EBJlEgGbDQrJXTUV3XAHT3iyfPyFuqrV4pVgKmCYFV2k8qk91FKJJJ802wftHmlYST6lA==", "articulo"=>{"title"=>"drftgyuhij", "text"=>"ghjbnk"}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[36mArticulo Create (0.0ms)[0m  [1m[32mINSERT INTO "articulos" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "drftgyuhij"], ["text", "ghjbnk"], ["created_at", "2018-07-14 18:37:29.287001"], ["updated_at", "2018-07-14 18:37:29.287001"]]
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[35m (109.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+Redirected to http://localhost:3000/articulos/7
+Completed 302 Found in 109ms (ActiveRecord: 109.4ms)
+
+
+Started GET "/articulos/7" for 127.0.0.1 at 2018-07-14 13:37:29 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:17
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 187ms (Views: 160.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 13:37:31 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 187ms (Views: 153.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/new?%23%3CArticulosController%3A0x0000000003a55818%3E=articulos" for 127.0.0.1 at 2018-07-14 13:37:33 -0500
+Processing by ArticulosController#new as HTML
+  Parameters: {"#<ArticulosController:0x0000000003a55818>"=>"articulos"}
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 144.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 13:37:38 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LtNmOiaSLYpocBbYscRdzTfxrYlcoNguSF/KKYnmaH/0PVh2LMQtVoudPtc3F979iKaLmeX5f5YAnnOR1SBbGA==", "articulo"=>{"title"=>"2", "text"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (31.3ms)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 2)):
+     8:             Este articulo se Guarda
+     9:           </h2>
+    10:           <ul>
+    11:             <% @articulo.errors.full_message.each do |msg| %>
+    12:             <li><%= msg %></li>
+    13:             <% end %>
+    14:           </ul>
+  
+app/views/articulos/new.html.erb:11:in `block in _app_views_articulos_new_html_erb__12896358_89929240'
+app/views/articulos/new.html.erb:3:in `_app_views_articulos_new_html_erb__12896358_89929240'
+app/controllers/articulos_controller.rb:12:in `create'
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 13:42:58 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LtNmOiaSLYpocBbYscRdzTfxrYlcoNguSF/KKYnmaH/0PVh2LMQtVoudPtc3F979iKaLmeX5f5YAnnOR1SBbGA==", "articulo"=>{"title"=>"2", "text"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 2)):
+     8:             Este articulo se Guarda
+     9:           </h2>
+    10:           <ul>
+    11:             <% @articulo.errors.full_message.each do |msg| %>
+    12:             <li><%= msg %></li>
+    13:             <% end %>
+    14:           </ul>
+  
+app/views/articulos/new.html.erb:11:in `block in _app_views_articulos_new_html_erb__12896358_90266740'
+app/views/articulos/new.html.erb:3:in `_app_views_articulos_new_html_erb__12896358_90266740'
+app/controllers/articulos_controller.rb:12:in `create'
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 13:43:34 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LtNmOiaSLYpocBbYscRdzTfxrYlcoNguSF/KKYnmaH/0PVh2LMQtVoudPtc3F979iKaLmeX5f5YAnnOR1SBbGA==", "articulo"=>{"title"=>"2", "text"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  Rendering articulos/new.html.erb within layouts/application
+  Rendered articulos/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 138.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articulos" for 127.0.0.1 at 2018-07-14 13:47:57 -0500
+Processing by ArticulosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BtUqfJArxm3QqmI4J5P88xQJ5kEvClp2E+UuQX6mVMnqlwu9khMqBduh/l0VCWCRP3O7Y6cvcdCg7xhvW/bF+Q==", "articulo"=>{"title"=>"2qwert", "text"=>""}, "commit"=>"Guardar"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[36mArticulo Create (0.0ms)[0m  [1m[32mINSERT INTO "articulos" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "2qwert"], ["text", ""], ["created_at", "2018-07-14 18:47:58.131716"], ["updated_at", "2018-07-14 18:47:58.131716"]]
+  ↳ app/controllers/articulos_controller.rb:9
+  [1m[35m (125.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:9
+Redirected to http://localhost:3000/articulos/8
+Completed 302 Found in 125ms (ActiveRecord: 125.1ms)
+
+
+Started GET "/articulos/8" for 127.0.0.1 at 2018-07-14 13:47:58 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"8"}
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `this' for #<ArticulosController:0x000000000af87988>):
+  
+app/controllers/articulos_controller.rb:19:in `show'
+Started GET "/articulos/8" for 127.0.0.1 at 2018-07-14 13:48:18 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:31
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 203ms (Views: 161.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 13:54:07 -0500
+Started GET "/articulos" for 127.0.0.1 at 2018-07-14 13:54:07 -0500
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 172ms (Views: 140.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by ArticulosController#index as HTML
+  Rendering articulos/index.html.erb within layouts/application
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT "articulos".* FROM "articulos"[0m
+  ↳ app/views/articulos/index.html.erb:9
+  Rendered articulos/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 172ms (Views: 143.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articulos/2/edit" for 127.0.0.1 at 2018-07-14 13:54:11 -0500
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered articulos/edit.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/edit.html.erb:3: syntax error, unexpected tLABEL
+fer.append=  form_with (model:@articulo, local: true) do |fo
+                              ^
+C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/edit.html.erb:33: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articulos/edit.html.erb:3: syntax error, unexpected tLABEL
+app/views/articulos/edit.html.erb:33: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articulos/2/edit" for 127.0.0.1 at 2018-07-14 13:54:12 -0500
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered articulos/edit.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 1938ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/edit.html.erb:3: syntax error, unexpected tLABEL
+fer.append=  form_with (model:@articulo, local: true) do |fo
+                              ^
+C:/Users/TopGroup/Desktop/SesionesSabado/Sesion 11/blog/app/views/articulos/edit.html.erb:33: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/articulos/edit.html.erb:3: syntax error, unexpected tLABEL
+app/views/articulos/edit.html.erb:33: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/articulos/2/edit" for 127.0.0.1 at 2018-07-14 13:55:09 -0500
+Processing by ArticulosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39
+  Rendering articulos/edit.html.erb within layouts/application
+  Rendered articulos/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 187ms (Views: 139.8ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/articulos/2" for 127.0.0.1 at 2018-07-14 13:55:26 -0500
+Processing by ArticulosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8oasrpQkbaDRi2flcevaJQCBVk/HN6fzQzyJdVJqCZMexI1vlhyByNqA+4BDcUZHK/sLbU8SjFXwNr9bdzqYow==", "articulo"=>{"title"=>"dfdfssd", "text"=>"fghjkl"}, "commit"=>"Guardar", "id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/articulos_controller.rb:20
+  [1m[36mArticulo Update (15.6ms)[0m  [1m[33mUPDATE "articulos" SET "text" = ?, "updated_at" = ? WHERE "articulos"."id" = ?[0m  [["text", "fghjkl"], ["updated_at", "2018-07-14 18:55:26.583703"], ["id", 2]]
+  ↳ app/controllers/articulos_controller.rb:20
+  [1m[35m (62.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/articulos_controller.rb:20
+Redirected to http://localhost:3000/articulos/2
+Completed 302 Found in 156ms (ActiveRecord: 78.1ms)
+
+
+Started GET "/articulos/2" for 127.0.0.1 at 2018-07-14 13:55:26 -0500
+Processing by ArticulosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticulo Load (0.0ms)[0m  [1m[34mSELECT  "articulos".* FROM "articulos" WHERE "articulos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/articulos_controller.rb:39
+  Rendering articulos/show.html.erb within layouts/application
+  Rendered articulos/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 203ms (Views: 170.2ms | ActiveRecord: 0.0ms)
+
+

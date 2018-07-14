@@ -1,0 +1,12 @@
+<p>
+  <strong>Title:</strong>
+  <%= @articulo.title %>
+</p>
+<p>
+  <strong>Text:</strong>
+  <%= @articulo.text %>
+</p>
+
+
+<%= link_to 'Regresar', articulos_path %>
+<%= link_to 'Editar', edit_articulos_path(@articulo) %>

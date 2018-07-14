@@ -1,0 +1,19 @@
+<h1>Lista de articulos</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Textos</th>
+    <th></th>
+  </tr>
+  <% @articulos.each do |articulo| %>
+    <tr>
+      <td><%= articulo.title %></td>
+      <td><%= articulo.text %></td>
+      <td><%= link_to 'show', articulo_path(articulo) %></td>
+      <td><%= link_to 'editar', edit_articulo_path(articulo) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Crear', :action=>"new", controller =>"articulos" %>
